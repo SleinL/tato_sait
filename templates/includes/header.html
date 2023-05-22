@@ -1,0 +1,10 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'base/header.css' %}">
+<nav class="top-menu">
+  <ul class="menu-main">
+    <li><a href="{% url 'Home:index' %}" class="current">Work</a></li>
+    <li><a href="{% url 'About:biography' %}">About</a></li>
+    <li><a href="{% url 'Blog:blog_func' %}">Blog</a></li>
+    <li><a href="">Contact</a></li>
+  </ul>
+</nav>

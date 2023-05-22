@@ -1,0 +1,10 @@
+html, body{
+background: #000 url('img/base_fon.jpg');
+background-attachment: fixed;
+height: 100%;
+
+}
+*{
+margin:0;
+padding:0;
+}

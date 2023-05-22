@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang='ru-RU'>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'base/body.css' %}">
+    <style>
+      * {
+	        margin: 0;
+	        padding: 0;
+          }
+      html, body {
+	                height: 100%;
+
+	              position: relative;
+	              min-height: 100%;
+	              padding-bottom: 90px;
+                }
+      foot {
+	              position: absolute;
+	              left: 0;
+	              bottom: 0;
+	              width: 100%;
+	              height: 80px;
+                }
+    </style>
+  </head>
+  <body>
+  {% include 'includes/header.html' %}
+  {% block content %}Контента нет{% endblock %}
+  {% include 'includes/foot.html' %}
+  </body>
+</html>
